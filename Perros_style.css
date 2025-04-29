@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fondo gris oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal (ocupa toda la página) */
+  .contenedor {
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 100%; /* Ocupa el 100% del alto */
+    background-color: transparent; /* Fondo transparente */
+    position: relative;
+    overflow: auto;
+  }
+  
+  /* Forma superior (gris) */
+  .forma-superior {
+    width: 100%;
+    height: 30%; /* Altura relativa al contenedor */
+    background-color: #f69c04; /* Gris más claro */
+    border-radius: 50% 50% 0 0;
+    position: relative;
+  }
+  
+  /* Forma central (naranja) */
+  .forma-central {
+    width: 100%;
+    height: 40%; /* Altura relativa al contenedor */
+    background-color: #ff4444; /* Naranja */
+    position: relative;
+  }
+  
+  /* Forma inferior (roja) */
+  .forma-inferior {
+    width: 100%;
+    height: 30%; /* Altura relativa al contenedor */
+    background-color: #f69c04; /* Rojo */
+    border-radius: 0 0 50% 50%;
+    position: relative;
+  }
+  
+  /* Línea decorativa (roja) */
+  .linea-decorativa {
+    width: 80%;
+    height: 5px; /* Grosor de la línea */
+    background-color: #ff4444; /* Rojo */
+    position: relative;
+    margin: 0 auto;
+    top: 28%; /* Posición ajustada */
+    border-radius: 5px;
+  }
+  
+  /* Separador superior */
+  .separador {
+    background-color: #333;
+    width: 100%; /* Ancho completo */
+    height: 50px; /* Altura ajustable */
+    position: relative;
+  }
+  
+  /* Diseño responsivo para móviles */
+  @media (max-width: 768px) {
+    .forma-superior,
+    .forma-inferior {
+      height: 25%; /* Altura reducida en móviles */
+    }
+  
+    .forma-central {
+      height: 50%; /* Altura aumentada en móviles */
+      top: 25%; /* Posición ajustada en móviles */
+    }
+  
+    .linea-decorativa {
+      top: 23%; /* Posición ajustada en móviles */
+    } 
+  }
