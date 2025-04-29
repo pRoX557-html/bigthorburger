@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   /* Estilos generales */
   body {
     margin: 0;
@@ -33,18 +33,14 @@
     position: relative;
   }
   
-  .centrar-item-superior{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Hace que el <a> ocupe todo el ancho del div */
-    height: 100%; /* Opcional si quieres centrarlo verticalmente también */
-    text-align: center; /* Asegura que el texto esté centrado */
-    text-decoration: none; /* Opcional: quita el subrayado del enlace */
-  }
+
 
   /* Forma central (naranja) */
   .forma-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 40%; /* Altura relativa al contenedor */
     background-color: #ff4444; /* Naranja */
