@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
   }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
 
   /* Estilos generales */
   body {
@@ -35,13 +41,12 @@
   
   /* Forma central (naranja) */
   .forma-central {
-    display: flex; 
-    flex-wrap: wrap;
     width: 100%;
-    height: 40%; /* Altura relativa al contenedor */
-    background-color: #ff4444; /* Naranja */
+    background-color: #ff4444;
     position: relative;
+    padding: 20px 10px;
   }
+
   
   /* Forma inferior (roja) */
   .forma-inferior {
@@ -60,33 +65,25 @@
     position: relative;
   }
 
-  .config-img{
-      float: left;
-      width: 750px;
-      height: 325px;
-      mask-image:linear-gradient(
-      right, 
-    black 70%,
-      transparent
-      );
-      margin-right: 6.5rem;
-      margin-left: 0.5rem;
-      border-bottom-left-radius:   1rem;
-      border-top-left-radius: 1rem;
-      border-bottom-right-radius:1rem;
-      border-top-right-radius:1rem;
+  .config-img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+    object-fit: cover;
   }
 
-    .logo{
-        width: 20%;
-        height: 58%;
-        margin-left: 41%;
-        margin-top: 10%; 
-        border-bottom-right-radius:1rem;
-        border-top-right-radius:1rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius:1rem;
-    }
+  .logo {
+    width: 180px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 2rem auto 1rem auto;
+    border-radius: 1rem;
+  }
+
 
     .boton {
       display: inline-block;
@@ -117,15 +114,32 @@
       height: 25%; /* Altura reducida en móviles */
     }
   
-    .forma-central {
-      height: 60%; /* Altura aumentada en móviles */
-    }
-  
-    .config-img{
-      height: 40%; /* Altura aumentada en móviles */
-      width: 96%;
-      top: 25%; /* Posición ajustada en móviles */
-      bottom: 4%;
-      float: none;
-    }
+ .forma-central {
+    padding: 10px; /* Para que el botón no toque los bordes */
   }
+  
+  .config-img {
+    width: 95%;
+    margin: 0 auto 1rem auto;
+  }
+
+
+    .boton {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 10px;
+      display: block;
+      text-align: center;
+    }
+    .logo {
+    max-width: 160px;
+  }
+
+  }
+
+  @media (max-width: 480px) {
+  .logo {
+    max-width: 130px;
+  }
+}

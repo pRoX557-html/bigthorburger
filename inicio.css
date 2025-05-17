@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
   }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   
   /* Estilos generales */
   body {
@@ -36,9 +42,9 @@
   /* Forma central (naranja) */
   .forma-central {
     width: 100%;
-    height: 40%; /* Altura relativa al contenedor */
-    background-color: #ff4444; /* Naranja */
+    background-color: #ff4444;
     position: relative;
+    padding: 20px 10px;
   }
   
   /* Forma inferior (roja) */
@@ -50,16 +56,7 @@
     position: relative;
   }
   
-  /* Línea decorativa (roja) */
-  .linea-decorativa {
-    width: 80%;
-    height: 5px; /* Grosor de la línea */
-    background-color: #ff4444; /* Rojo */
-    position: relative;
-    margin: 0 auto;
-    top: 28%; /* Posición ajustada */
-    border-radius: 5px;
-  }
+
 
     .copyright {
     position: absolute;
@@ -73,23 +70,22 @@
     /* Tamñode las imagenes */
     
     .ajuste-img{
-        width: 95%;
-        height: 88%;
-        margin-left: 1.5rem; 
-        border-bottom-right-radius:1rem;
-        border-top-right-radius:1rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius:1rem;
+      width: 100%;
+      max-width: 750px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem auto;
+      border-radius: 1rem;
+      object-fit: cover;
     }
+
     .logo{
-        width: 20%;
-        height: 58%;
-        margin-left: 41%;
-        margin-top: 10%; 
-        border-bottom-right-radius:1rem;
-        border-top-right-radius:1rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius:1rem;
+      width: 180px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 2rem auto 1rem auto;
+      border-radius: 1rem;
     }
 
 
@@ -108,20 +104,25 @@
       height: 25%; /* Altura reducida en móviles */
     }
   
-    .forma-central {
-      height: 50%; /* Altura aumentada en móviles */
-  
-    }
-  
-    .linea-decorativa {
-      top: 23%; /* Posición ajustada en móviles */
-    } 
-    .ajuste-img {
-        height: 50%; /* Altura aumentada en móviles */
-       top: 25%; /* Posición ajustada en móviles */
-     }
-    .logo{
-      height: 50%; /* Altura aumentada en móviles */
-      top: 25%; /* Posición ajustada en móviles */
-    } 
+    
+ .forma-central {
+    padding: 10px; /* Para que el botón no toque los bordes */
   }
+  
+
+    .ajuste-img {
+    width: 95%;
+    margin: 0 auto 1rem auto;
+     }
+
+    .logo {
+    max-width: 160px;
+  }
+
+  }
+
+  @media (max-width: 480px) {
+  .logo {
+    max-width: 130px;
+  }
+}
