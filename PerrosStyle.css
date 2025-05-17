@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   /* Estilos generales */
   body {
     margin: 0;
@@ -50,37 +50,31 @@
     position: relative;
   }
   
-  /* Línea decorativa (roja) */
-  .linea-decorativa {
-    width: 80%;
-    height: 5px; /* Grosor de la línea */
-    background-color: #ff4444; /* Rojo */
+  /* Separador superior */
+  .separador {
+    background-color: #333;
+    width: 100%; /* Ancho completo */
+    height: 50px; /* Altura ajustable */
     position: relative;
-    margin: 0 auto;
-    top: 28%; /* Posición ajustada */
-    border-radius: 5px;
   }
 
-    .copyright {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px 0;
+  .config-img{
+      float: left;
+      width: 750px;
+      height: 325px;
+      mask-image:linear-gradient(
+      right, 
+    black 70%,
+      transparent
+      );
+      margin-right: 6.5rem;
+      margin-left: 0.5rem;
+      border-bottom-left-radius:   1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius:1rem;
+      border-top-right-radius:1rem;
   }
-  
-    /* Tamñode las imagenes */
-    
-    .ajuste-img{
-        width: 95%;
-        height: 88%;
-        margin-left: 1.5rem; 
-        border-bottom-right-radius:1rem;
-        border-top-right-radius:1rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius:1rem;
-    }
+
     .logo{
         width: 20%;
         height: 58%;
@@ -92,14 +86,27 @@
         border-bottom-left-radius:1rem;
     }
 
+    .boton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f69c04; /* Azul */
+      color: rgb(7, 0, 0);
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+}
 
-  /* Separador superior */
-  .separador {
-    background-color: #333;
-    width: 100%; /* Ancho completo */
-    height: 50px; /* Altura ajustable */
-    position: relative;
-  }
+    .boton:hover {
+      background-color: #0056b3; /* Azul más oscuro */
+    }
+
+    .boton:active {
+      background-color: #004494; /* Más oscuro aún al hacer clic */
+    }
+
   
   /* Diseño responsivo para móviles */
   @media (max-width: 768px) {
@@ -109,19 +116,14 @@
     }
   
     .forma-central {
-      height: 50%; /* Altura aumentada en móviles */
-  
+      height: 60%; /* Altura aumentada en móviles */
     }
   
-    .linea-decorativa {
-      top: 23%; /* Posición ajustada en móviles */
-    } 
-    .ajuste-img {
-        height: 50%; /* Altura aumentada en móviles */
-       top: 25%; /* Posición ajustada en móviles */
-     }
-    .logo{
-      height: 50%; /* Altura aumentada en móviles */
+    .config-img{
+      height: 40%; /* Altura aumentada en móviles */
+      width: 96%;
       top: 25%; /* Posición ajustada en móviles */
-    } 
+      bottom: 4%;
+      float: none;
+    }
   }

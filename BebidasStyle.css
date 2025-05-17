@@ -86,9 +86,27 @@
         border-bottom-left-radius:1rem;
     }
 
-    .boton{
-      
+    .boton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f69c04; /* Azul */
+      color: rgb(7, 0, 0);
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+}
+
+    .boton:hover {
+      background-color: #0056b3; /* Azul más oscuro */
     }
+
+    .boton:active {
+      background-color: #004494; /* Más oscuro aún al hacer clic */
+    }
+
   
   /* Diseño responsivo para móviles */
   @media (max-width: 768px) {
