@@ -33,8 +33,6 @@
     position: relative;
   }
   
-
-
   /* Forma central (naranja) */
   .forma-central {
     width: 100%;
@@ -61,16 +59,36 @@
   }
 
   .config-img{
-    width: 750px;
-    height: 350px;
-    mask-image:linear-gradient(
-     to right, 
-     black 70%,
-     transparent
-     );
-     border-bottom-left-radius:   1rem;
-     border-top-left-radius: 1rem;
+      float: left;
+      width: 750px;
+      height: 325px;
+      mask-image:linear-gradient(
+      right, 
+    black 70%,
+      transparent
+      );
+      margin-right: 6.5rem;
+      margin-left: 0.5rem;
+      border-bottom-left-radius:   1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius:1rem;
+      border-top-right-radius:1rem;
   }
+
+    .logo{
+        width: 20%;
+        height: 58%;
+        margin-left: 41%;
+        margin-top: 10%; 
+        border-bottom-right-radius:1rem;
+        border-top-right-radius:1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius:1rem;
+    }
+
+    .boton{
+      
+    }
   
   /* Diseño responsivo para móviles */
   @media (max-width: 768px) {
@@ -80,11 +98,14 @@
     }
   
     .forma-central {
-      height: 50%; /* Altura aumentada en móviles */
-      top: 25%; /* Posición ajustada en móviles */
+      height: 60%; /* Altura aumentada en móviles */
     }
   
-    .linea-decorativa {
-      top: 23%; /* Posición ajustada en móviles */
-    } 
+    .config-img{
+      height: 40%; /* Altura aumentada en móviles */
+      width: 96%;
+      top: 25%; /* Posición ajustada en móviles */
+      bottom: 4%;
+      float: none;
+    }
   }

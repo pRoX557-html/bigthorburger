@@ -72,6 +72,16 @@
         border-top-left-radius: 1rem;
         border-bottom-left-radius:1rem;
     }
+    .logo{
+        width: 20%;
+        height: 58%;
+        margin-left: 41%;
+        margin-top: 10%; 
+        border-bottom-right-radius:1rem;
+        border-top-right-radius:1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius:1rem;
+    }
 
 
   /* Separador superior */
@@ -101,4 +111,8 @@
         height: 50%; /* Altura aumentada en móviles */
        top: 25%; /* Posición ajustada en móviles */
      }
+    .logo{
+      height: 50%; /* Altura aumentada en móviles */
+      top: 25%; /* Posición ajustada en móviles */
+    } 
   }
